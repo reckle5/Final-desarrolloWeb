@@ -101,11 +101,11 @@ ul {
     height: 900px;
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 30% 50%;
     padding: 140px  50px 100px 50px;  
     grid-template-areas: "titulo titulo"
     "texto imagen";
-    gap: 2rem;
+    column-gap: 10rem;
     
 }
 
@@ -121,7 +121,9 @@ ul {
     text-transform: uppercase;
     line-height: 100px;
     margin-top: 45px;
-
+    align-items: center;
+    justify-items: center;
+    
 }
 .hoja-titulo{
     padding: 1rem;
@@ -131,7 +133,7 @@ ul {
 .main__parrafo{
     grid-area: texto;
     display:flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content:flex-start;
     color:black;
     font-size: 25px;
@@ -151,12 +153,13 @@ ul {
 .main__img{
     grid-area: imagen;
     display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    width:80%;
-    height: 380px;
+    align-items: center;
+    justify-items: center;
+    width:50%;
+    height: 550px;
+    border-radius: 5px;
     
-    border-radius: 10px;
+    
 }
 
 
@@ -269,15 +272,19 @@ ul {
     grid-area: prod;
     display: flex;
     align-content: center;
+    transition: transform 1s;
+  }
 
-}
 .h3{
     color: beige;
     background-color: rgb(179,129,132);
     padding: 1rem;
+    transition: transform 1s;
 
 }
-
+.main2__h3 a:hover{
+    transform: scale(1.2,1.2);
+}
 
 /*NEWSLETTER*/
 
@@ -303,14 +310,21 @@ ul {
 }
 
 .boton{
-    color: rgb(128, 68, 72);
+    color: white;
     font-weight: bold;
     background-color: rgb(205,187,153);
     padding: 8px;
-    border-color: rgb(247,228,190);
+    border-color: rgb(179,129,132);
+    background-image: linear-gradient(to right,rgb(179,129,132)50%, rgb(122, 72, 122) 50% );
+    background-position: left;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease;
 
 }
-
+.boton:hover{
+    background-position: right;
+}
 #mail{
     padding: 8px;
     margin-top: 10px;
