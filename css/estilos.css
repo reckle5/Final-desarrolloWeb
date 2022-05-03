@@ -22,16 +22,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:rgba(179,129,132 ,0.5);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
     box-shadow: 0 2px 5px rgba(168, 0, 98, 0.4);
 }
 
-.header__iconos{
-    display: none;
-}
+
 
 .header__logo{
     display: flex;
@@ -50,49 +44,22 @@ body{
   
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-}
-
-#search{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 200px;
-    height: 1.5rem;
-    border-color:rgba(179,129,132 ,0.5) ;
-    
-}
 
 .nav__search{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1rem;
+    padding-left: 2rem;
+    border-color:rgba(179,129,132 ,0.5) ;
+    height: 2.2rem;
 }
-.nav__menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap; 
-    gap: 5px;   
-    padding-right: 1rem;
-}
+
 
 .nav__enlace{
     color: rgb(85, 54, 72);
-    text-decoration: none;
-    font-size: 22px;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-ul {
-    list-style-type: none;
-}
-
-
 
 /* inicio de pag*/
 
@@ -105,7 +72,7 @@ ul {
     padding: 140px  50px 100px 50px;  
     grid-template-areas: "titulo titulo"
     "texto imagen";
-    column-gap: 10rem;
+    column-gap: 2rem;
     
 }
 
@@ -123,6 +90,7 @@ ul {
     margin-top: 45px;
     align-items: center;
     justify-items: center;
+    width: 100%;
     
 }
 .hoja-titulo{
@@ -153,20 +121,14 @@ ul {
 .main__img{
     grid-area: imagen;
     display:flex;
-    align-items: center;
-    justify-items: center;
+    justify-content: center;
     width:50%;
     height: 550px;
-    border-radius: 5px;
-    
-    
+    border-radius: 2px;
+    margin-left: 8rem;
 }
 
-
-
 /* productos favoritos*/
-
-
 
 .main2{
     background-image: linear-gradient(0deg, rgba(245,244,251,1) 0%, rgba(247,228,190,1) 18%, rgba(255,255,255,1) 100%);
@@ -314,8 +276,9 @@ ul {
     font-weight: bold;
     background-color: rgb(205,187,153);
     padding: 8px;
+    border-radius: 5px;
     border-color: rgb(179,129,132);
-    background-image: linear-gradient(to right,rgb(179,129,132)50%, rgb(122, 72, 122) 50% );
+    background-image: linear-gradient(to right,rgb(179,129,132) 50%, rgb(122, 72, 122) 50% );
     background-position: left;
     background-size: 200%;
     background-repeat: no-repeat;
@@ -328,6 +291,8 @@ ul {
 #mail{
     padding: 8px;
     margin-top: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
 }
 
 /*FOOTER*/
@@ -337,7 +302,7 @@ ul {
     background-color: rgb(65,62,74);
     text-align: center;
     height: 180px;
-
+    
 }
 
 .daddygrid{
@@ -425,53 +390,60 @@ ul {
 
 .faqs{
     width: 100%;
+    height: max-content;
+    background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
 }
 
 .faqs__h1{
-    color: rgb(115,98,110);
+    color: white;
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    text-align: left;
     text-transform: uppercase;
     line-height: 100px;
-    padding-top: 12rem;
-    position: relative;
-    left: 3rem;
-    text-decoration-line: underline;
+    padding-top: 10rem;
+    
 }
-
 .faqs__ul{
-    position: relative;
-    left: 4rem;
-    list-style: circle;
-    padding: 0.5rem;
- 
+    font-size: 20px;
+    
 }
-
 .faqs__p1{
-    color:rgb(128, 68, 72);
-    font-size: 2rem;
-    background-color: rgba(61, 28, 51, 0.5);
+    color:white;
+    font-size: 1.5rem;
+    background-color: black;
     text-align: center;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem 10rem 1rem 10rem ;
+   
 }
 
 .faqs__p2{
-    color:rgb(128, 68, 72);
-    font-size: 2rem;
-    background-color: rgba(61, 28, 51, 0.5);
+    color:white;
+    font-size: 1.5rem;
+    background-color: black;
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem 10rem 1rem 10rem ;
 }
 
 .faqs__p3{
-    color:rgb(128, 68, 72);
-    font-size: 2rem;
-    background-color: rgba(61, 28, 51, 0.5);
+    color:white;
+    font-size: 1.5rem;
+    background-color: black;
     text-align: center;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem 10rem 1rem 10rem ;
 }
+
 
 .preguntas{
     text-align: center;
@@ -484,6 +456,7 @@ ul {
 
 .preguntas__2{
     padding-bottom: 3rem;
+    
 }
 
 /*contacto*/
@@ -877,52 +850,33 @@ grid-area: tabla;
 
 @media screen and (max-width:1024px){
     /*index*/
-    .header{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        justify-content: space-between;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    }
-    
-    .header__iconos{
-        display: block;
-        flex-direction: column;
-        justify-items: center;
-    }
-    .header__icono, .header__icono2{
-        display: flex;
-        flex-direction: row;
-        margin-top: 0.5rem;
-        padding-right: 2rem;
-        font-size: 30px;
-        color:rgb(112, 55, 59);
-        
-    } 
-
-    .nav, .footer__logo, .footer__pago, .footer__redes{
-        display: none;
-    }
+   
 
     .main{
         grid-template-columns: 1fr;
-        grid-template-rows: 230px 500px 400px;
+        grid-template-rows: 200px 400px 450px;
         grid-template-areas: "titulo"
         "texto"
         "imagen";
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         height: auto;
      
     }
+.main__titulo, .main__parrafo{
+    font-size: 22px;
+}
 
     .main__img{
-        width: 100%;
-
+        width: 70%;
+        margin-left: 10%;
+       
     }
     .main2__titulo, .main2{
         width: auto;
         height: auto;
+        
         
     }
     .main2__grid{
@@ -1017,69 +971,46 @@ grid-area: tabla;
 @media screen and (max-width: 600px){ 
 
    /* index*/ 
-.header{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-}
-.header__logo{
-    border-radius: 5rem;
-    margin-left: 1rem;
-}
-.header__iconos{
-    display: block;
-    flex-direction: column;
-    justify-items: center;
-}
-.header__icono, .header__icono2{
-    display: flex;
-    flex-direction: row;
-    margin-top: 0.5rem;
-    padding-right: 2rem;
-    font-size: 30px;
-    color:rgb(112, 55, 59);
-    
-}   
-.nav, .footer__logo, .footer__pago, .footer__redes{
-    display: none;
-}
+
 .main{
     grid-template-columns: 1fr;
-    grid-template-rows: 230px 400px 300px;
+    grid-template-rows: 200px 400px 450px;
     grid-template-areas: "titulo"
     "texto"
     "imagen";
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     height: auto;
-    gap: 1rem;
+    row-gap: 1rem;
  
 }
+
 .main__titulo{
-    font-size: 20px;
-    line-height: normal;
-    margin-top: 100px;
-    text-align: justify;
-    height: 100px;
+   font-size: 16px; 
+   line-height: 1rem;
 
 }
-
+.hoja-titulo{
+    font-size: 26px;
+}
 .main__parrafo{
     font-size: 18px;
     line-height: 45px;
     align-items: flex-start;
+    justify-content: flex-start;
 
 }
 .main__img{
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0% ;
 }
 
 .main2__titulo, .main2{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     
 }
 .main2__grid{
@@ -1096,10 +1027,32 @@ grid-area: tabla;
 }
 .main3{
     font-size: 20px;
+    height: fit-content;
+    
+}
+.main3__titulo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 21px;
+}
+.main3__p{
+    font-size: 17px;
+}
+#mail{
+    padding: 1px;
 }
 
-.footer__contacto, .contacto, .pago, .redes{
-    font-size: 12px;
+.main2__img1, .main2__img2, .main2__img3{
+    height: 390px;
+    width: 280px;
+}
+.contacto{
+    font-size: 16px;
+}
+.boton{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
 }
 
 /*contacto*/

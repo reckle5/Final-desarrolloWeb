@@ -12,32 +12,48 @@
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/e90bc9afc6.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="./JS/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
-    <header class="header header__transf">
-        <img src="imagenes/migla logo.jpg" alt="logo migla" class="header__logo">
-        <div class="header__iconos">
-        <i class="fa-solid fa-magnifying-glass header__icono" ></i>
-        <i class="fa-solid fa-bars header__icono2"></i>
-      </div>
-    <nav class="nav">
-<label for="search"  class="nav__search">
-<input type="text" name="searchebox" id="search" placeholder="Buscar productos" >
-    <ul class="nav__menu">
-        <li class="nav__li">
-            <a class="nav__enlace" href="index.html">Inicio</a></li>
-        <li class="nav__li">
-            <a class="nav__enlace" href="pages/productos.html">Productos</a> 
-            <a class="nav__enlace" href="pages/nosotras.html">Nosotras</a></li>
-        <li class="nav__li">
-            <a class="nav__enlace" href="pages/contacto.html">Contacto</a></li>
-        <li class="nav__li">
-            <a class="nav__enlace" href="pages/faqs.html">Preguntas Frecuentes</a></li>
-        </ul>
-</nav>
-
-</header>
+    <nav class="navbar navbar-sm navbar-expand-md navbar-lg navbar-light header " style=" background-color: rgba(255, 255, 255, 0.5);" >
+        <a class="navbar.brand header__transf" href="">
+            <img src="../imagenes/migla logo.jpg" alt="logo migla" class="header__logo ">
+         </a>
+        
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSupContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse justify-content-center " id="navbarSupContent">
+            <ul class="navbar-nav nav__enlace ">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="/pages/productos.html">Productos</a>
+             </li>
+             <li class="nav-item">
+                   <a class="nav-link" href="/pages/nosotras.html">Nosotras</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+             </li>
+             <li class="nav-item ">
+                 <a class="nav-link  " href="/pages/faqs.html">Preguntas Frecuentes</a>
+             </li>
+ 
+             <form class="form-inline nav__search">
+                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar Producto" aria-label="search">
+                 <button class="btn btn-outline-danger my-sm-0" type="submit">
+                    Buscar
+                </button>
+             </form>
+ 
+            </ul>
+        </div>
+    </nav>
 
 <main>
     <section class="main">
@@ -70,7 +86,7 @@
             </div>
 
           <div class="main2__h3" >
-             <a href="pages/productos.html" class="h3">VER TODOS LOS PRODUCTOS</a>
+            <a class="btn btn-outline-danger" href="pages/productos.html" role="button"> VER TODOS LOS PRODUCTOS</a>
           </div>
     </div> 
     </section>
@@ -80,48 +96,49 @@
            <dt class="main3__titulo">SUMATE A MIGLA</dt>
            <dd class="main3__p">Suscribite y recibí promociones, descuentos y novedades exclusivas directo a tu inbox.</dd>
        </dl>
-       <form action="" >
+       <form>
        
-        <label for="mail"></label>
-        <input type="text" id="mail" placeholder="ingresa tu MAIL">
-        <button class="boton">SUSCRIBIRME</button>
+        <label for="mail"  ></label>
+        <input type="text" id="mail" placeholder="ingresa tu MAIL" >
+        <button class="boton p-1">SUSCRIBIRME</button>
         
      </form>
     </section>
         
     </main>
 
-    <footer class="footer">
-<div class="daddygrid">
-    <div class="daddydiv">
-       <p class="footer__redes">REDES SOCIALES</p>
-     <div class="redes">
-      <a href="http://www.instagram.com/migla.hogar/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="redes__insta"></ion-icon></a>
-      <a href="http://www.facebook.com/migla.macetas/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" class="redes__face"></ion-icon></a>
-     </div>
-    </div> 
-
-    <div class="daddydiv">
-      <p class="footer__pago">MEDIOS DE PAGO</p>
-     <div class="pago">
-      <img src="imagenes/visa.png" alt="logo visa" class="visa">
-      <img src="imagenes/amex.png" alt="logo amex" class="amex">
-      <img src="imagenes/tool.png" alt="logo mastercard" class="mast">
-     </div>
-    </div>   
-
-    <div class="daddydiv">
-       <p class="footer__contacto">CONTACTANOS</p>
-     <ul class="contacto">
-      <li><ion-icon name="call-outline"></ion-icon> 1137869536</li>
-      <li><ion-icon name="mail-open-outline"></ion-icon> info@miglahogar.com.ar</li>
-      <li><ion-icon name="pin-outline"></ion-icon> L.N Alem 325</li>
-     </ul>
-   </div>
-   <div class="daddydiv">
-    <img src="imagenes/migla logo.jpg" alt="logo migla" class="footer__logo">
-    </div>
-</div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-5 bg-dark text-white">
+               <div class="col-xs-12 col-md-6 col-lg-3 mb-2">
+                <p class="h2">Migla Hogar</p>
+                <ion-icon name="home-outline"></ion-icon>  
+             </div>     
+             <div class="col-xs-12 col-md-6 col-lg-3 mb-2">
+                <p class="h5 text-secondary">Redes Sociales</p>
+                <a href="http://www.instagram.com/migla.hogar/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="redes__insta"></ion-icon></a>
+               <a href="http://www.facebook.com/migla.macetas/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" class="redes__face"></ion-icon></a>
+             </div>    
+             <div class="col-xs-12 col-md-6 col-lg-3 mb-2">
+               <p class="h5 text-secondary">Medios De Pago</p> 
+               <div class="pago">
+                <img src="imagenes/visa.png" alt="logo visa" class="visa">
+                <img src="imagenes/amex.png" alt="logo amex" class="amex">
+                <img src="imagenes/tool.png" alt="logo mastercard" class="mast">
+              </div>
+             </div>      
+             <div class="col-xs-12 col-md-6 col-lg-3 mb-2">
+                <p class="h5 text-secondary">Contactanos</p>
+                <ul class="contacto list-unstyled mb-1">
+                    <li><ion-icon name="call-outline"></ion-icon> 1137869536</li>
+                    <li><ion-icon name="mail-open-outline"></ion-icon> info@miglahogar.com.ar</li>
+                    <li><ion-icon name="pin-outline"></ion-icon> L.N Alem 325</li>
+                 </ul>
+             </div>    
+                
+               
+    
+            </div>>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
