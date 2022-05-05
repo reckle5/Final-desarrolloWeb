@@ -18,13 +18,14 @@ body{
 
 /* header*/
 
+
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(168, 0, 98, 0.4);
 }
-
 
 
 .header__logo{
@@ -44,7 +45,6 @@ body{
   
 }
 
-
 .nav__search{
     display: flex;
     flex-direction: row;
@@ -53,7 +53,6 @@ body{
     border-color:rgba(179,129,132 ,0.5) ;
     height: 2.2rem;
 }
-
 
 .nav__enlace{
     color: rgb(85, 54, 72);
@@ -76,8 +75,6 @@ body{
     
 }
 
-
-
 .main__titulo{
     grid-area: titulo;
     color: rgb(115,98,110);
@@ -87,7 +84,6 @@ body{
     text-align: center;
     text-transform: uppercase;
     line-height: 100px;
-    margin-top: 45px;
     align-items: center;
     justify-items: center;
     width: 100%;
@@ -147,7 +143,7 @@ body{
 }
 .main2__grid{
     display:grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto 200px;
     grid-template-areas: "img1 img2 img3"
     "prod prod prod";
@@ -167,7 +163,7 @@ body{
 .main2__img1 {
     display: flex;
     flex-direction: column;
-    width:400px;
+    width:380px;
     height: 440px;
     border-radius: 3px;
     justify-self: center;
@@ -184,7 +180,7 @@ body{
     
 }
 .main2__img2 {
-    width:400px;
+    width:380px;
     height: 440px;
     border-radius: 3px;
     justify-self: center;
@@ -200,7 +196,7 @@ body{
     
 }
 .main2__img3 {
-    width:400px;
+    width:380px;
     height: 450px;
     border-radius: 3px;
     justify-self: center;
@@ -410,38 +406,47 @@ body{
 }
 .faqs__p1{
     color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    background-color: black;
+    background-color: rgba(179, 13, 13, 0.205);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 4rem 10rem 1rem 10rem ;
+    padding-top: 1rem;
    
 }
 
 .faqs__p2{
     color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    background-color: black;
+    background-color: rgba(179, 13, 13, 0.205);
     text-align: center;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 4rem 10rem 1rem 10rem ;
+    padding-top: 1rem;
 }
 
 .faqs__p3{
     color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    background-color: black;
+    background-color: rgba(179, 13, 13, 0.205);
     text-align: center;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 4rem 10rem 1rem 10rem ;
+    padding-top: 1rem;
 }
 
 
@@ -456,6 +461,15 @@ body{
 
 .preguntas__2{
     padding-bottom: 3rem;
+    
+}
+.escala{
+    transition: all 3s;
+
+}
+.escala a:hover{
+    transform: scale(0.85);
+    color: rgb(73, 41, 52);
     
 }
 
@@ -831,30 +845,28 @@ grid-area: tabla;
 
 .us{
     color: rgb(87, 47, 75);
-    font-size: 30px;
-    font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    padding-top: 12rem;
-    position: relative;
-    left: 3rem;
-    margin-bottom: 18rem;
+    margin-top: 2rem;
+  
+
+}
+.us__p{
+   
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(105, 57, 90);
+   
 }
 
-.us__p{
-    color: rgb(10, 7, 9);
-    line-height: 3rem;
-}
 
 /* media querys*/
 
 @media screen and (max-width:1024px){
     /*index*/
    
-
+  
     .main{
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 400px 450px;
+        grid-template-rows: 180px 360px 450px;
         grid-template-areas: "titulo"
         "texto"
         "imagen";
@@ -862,15 +874,18 @@ grid-area: tabla;
         align-items: flex-start;
         width: 100%;
         height: auto;
+        padding-top: 3rem;
+        
      
     }
+    
 .main__titulo, .main__parrafo{
     font-size: 22px;
 }
 
     .main__img{
-        width: 70%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 12rem;
        
     }
     .main2__titulo, .main2{
@@ -965,6 +980,21 @@ grid-area: tabla;
     font-size: 30px;
     text-align: center;
 }
+
+/*faqs*/
+.faqs__h1{
+    padding-top: 2rem;
+   
+}
+.preguntas{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.faqs__p1, .faqs__p2, .faqs__p3{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 }
 
 
