@@ -1,0 +1,229 @@
+*{
+
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+}
+
+body{
+
+  font-family: 'Roboto', sans-serif;
+
+}
+.main {
+  @include tamaño(100%,auto);
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 50%;
+    padding: 140px  50px 100px 50px;  
+    grid-template-areas: "titulo titulo"
+    "texto imagen";
+    column-gap: 2rem;
+    
+   &__titulo{
+    grid-area: titulo;
+    color: rgb(115,98,110);
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+   }
+
+   &__parrafo{
+    grid-area: texto;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    color:black;
+    font-size: 25px;
+    font-family: $fontParrafos;
+    text-align: left;
+    line-height:55px;
+  }
+
+   &__parrafo span{
+    color: rgb(240,180,158);
+    font-weight: bolder;
+    font-family: $fontParrafos;
+  }
+
+   &__img{
+    grid-area: imagen;
+    display:flex;
+    justify-content: center;
+    @include tamaño(50%,auto);
+    border-radius: 2px;
+    margin-left: 8rem;
+   }
+}
+
+.hoja-titulo{
+    padding: 1rem;
+    font-size: 62px;
+}
+
+/*Prods favoritos*/
+
+.main2{
+  background-image: linear-gradient(0deg, rgba(245,244,251,1) 0%, rgba(247,228,190,1) 18%, rgba(255,255,255,1) 100%);
+  height: auto;
+ 
+
+
+     &__titulo{
+       color: $mainColortitle;
+       background-image: linear-gradient(0deg, rgba(245,244,251,1) 0%, rgba(247,228,190,1) 20%, rgba(255,255,255,1) 900%);
+       text-align: center;
+       font-family: $fontTitle;
+       font-weight: lighter;
+       padding: 60px 10px 60px 10px;
+      margin: 45px 0 45px 0;
+     }
+
+     &__grid{
+       display:grid;
+       grid-template-columns: 33.3% 33.3% 33.3%;
+       grid-template-rows: auto 200px;
+       grid-template-areas: "img1 img2 img3"
+       "prod prod prod";
+       justify-items: center;
+       align-items: center;
+       justify-content: center;
+     }
+
+     &__1{
+       grid-area: img1;
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+       justify-self: center;
+     }
+
+     &__img1 {
+       display: flex;
+       flex-direction: column;
+       @include tamaño(300px,440px);
+       border-radius: 3px;
+       justify-self: center;
+       padding-bottom: 1rem;
+  
+   }
+
+     &__2{
+       grid-area: img2;
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+       justify-self: center;
+  
+     }
+     &__img2 {
+      @include tamaño(300px,440px);
+       border-radius: 3px;
+       justify-self: center;
+       padding-bottom: 1rem;
+     }
+
+     &__3{
+       grid-area: img3;
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+       justify-self: center; 
+  
+      }
+      &__img3 {
+        @include tamaño(300px,440px);
+        justify-self: center;
+        padding-bottom: 1rem;
+      } 
+
+      &__p{
+       color: beige;
+       background-color: rgb(179,129,132);
+       padding: 5px;
+       align-self: center;
+ 
+      }
+
+       &__p2{
+        color: beige;
+        background-color: rgb(179,129,132);
+        padding: 5px;
+        align-self: center;
+      }
+
+       &__p3{
+        color: beige;
+        background-color: rgb(179,129,132);
+        padding: 5px;
+        align-self: center;
+ 
+      }
+
+       &__h3{
+          grid-area: prod;
+          display: flex;
+          align-content: center;
+          transition: transform 1s;
+        }
+
+        &__h3{
+          transition: transform 3s ease;
+
+        }
+        &:hover h3{
+          transform: scale(1.2,1.2);
+        }
+}
+
+/*NEWSLETTER*/
+
+.main3{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px;
+  height: 300px;
+  font-size: 20px;
+  align-items: center;
+
+    &__titulo {
+      font-weight: bolder;
+      color: rgb(179,129,132);
+      align-content: center;
+      margin-top: 5rem;
+      font-family: $fontTitle;
+  
+    }
+
+    &__p{
+      font-weight: 250%;
+      font-family: $fontParrafos;
+    }
+    &__boton{
+      color: white;
+      font-weight: bold;
+      background-color: rgb(205,187,153);
+      padding: 8px;
+      border-radius: 5px;
+      border-color: rgb(179,129,132);
+      background-image: linear-gradient(to right,rgb(179,129,132) 50%, rgb(122, 72, 122) 50% );
+      background-position: left;
+      background-size: 200%;
+      background-repeat: no-repeat;
+      transition: background-position 0.3s ease;
+    
+    }
+    &__boton:hover {
+      background-position: right;
+    }
+}
+
