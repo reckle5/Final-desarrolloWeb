@@ -1,28 +1,14 @@
 
-.redesInsta{
+.redesInsta, .redesFace{
     color: antiquewhite;
     @include tamaño(50px,40px);
 
 }
 
-.redesFace{
-    color: antiquewhite;
-    @include tamaño(50px,40px);
-   
+
+
+.visa, .amex, .mast{
+    @extend .tarjetafooter;
 }
 
 
-.visa{
-    width: 50px;
-    border-radius: 5px;
-}
-
-.amex{
-    width: 50px;
-    border-radius: 5px;
-}
-
-.mast{
-    width:50px;
-    border-radius: 5px;
-}

@@ -1,0 +1,224 @@
+*{
+
+    padding: 0;
+  
+    margin: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  body{
+  
+    font-family: 'Roboto', sans-serif;
+  
+  }
+.macetash1{
+    grid-area: t;
+    display: flex;
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    font-style:italic;
+    margin-top: 15rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgb(194, 155, 209);
+}
+    .macetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .macetas__1{
+        
+        grid-area: m1;
+        width: 250px;
+        height: 300px;
+    }
+    .macetas__p2{
+        font-size: 16px;
+        font-weight:lighter;
+        color: black;
+        padding: 1rem 1rem 1rem 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .macetas__2{
+        grid-area: m2;
+        width: 250px;
+        height: 300px;
+    }
+
+    .macetas__checkb{  
+        color: black;
+        padding: 1rem 1rem 1rem 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+.macetas__3{
+    grid-area: m3;
+    width: 250px;
+    height: 300px;
+   }
+.macetas__p3{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    padding: 1rem 1rem 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+.macetas__4{
+    grid-area: m4;
+    width: 250px;
+    height: 300px;
+    
+}
+.macetas__p4{
+    bottom: 45rem;
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    padding: 1rem 1rem 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+.macetas__5{
+    grid-area: m5;
+    width: 250px;
+    height: 300px;
+}
+.macetas__p5{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    padding: 1rem 1rem 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+.almo__h2{
+    grid-area: t2;
+    display: flex;
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    font-style:italic;
+    padding-bottom: 40px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgb(194, 155, 209);
+}
+.almo{
+    display: flex;
+flex-direction: column;
+
+}
+  
+.almo__1{ 
+    grid-area: a1;
+    width: 250px;
+    height: 300px;   
+}
+.almo__p1{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    padding: 1rem 1rem 1rem 0;
+}
+
+.almo__2{  
+    grid-area: a2;
+    width: 250px;
+    height: 300px; 
+}
+.almo__p2{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 1rem 1rem 0;
+   }
+
+.almo__3{
+    grid-area: a3;
+    width: 250px;
+    height: 300px; 
+}
+
+.almo__p3{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 1rem 1rem 0;
+}
+.almo__4{
+    grid-area: a4;
+    width: 250px;
+    height: 300px;
+}
+
+.almo__p4{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 1rem 1rem 0;
+}
+.almo__5{
+    grid-area: a5;
+    width: 250px;
+    height: 300px;
+}
+.almo__p5{
+    font-size: 16px;
+    font-weight:lighter;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 1rem 1rem 0;
+
+}
+.tabla{
+    grid-area: tabla;
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        table-layout: auto;
+        width: 100%;
+        height: 15rem;
+        border-color: 1px solid rgba(119, 28, 34, 0.5);
+       flex-direction: row;
+       justify-content: center;
+       
+    }
+
+.tablainfo__h3{
+    
+    grid-area: t3;
+    font-size: 35px;
+    font-weight: lighter;
+    color: beige;
+    background-color: rgba(211, 66, 76, 0.5);
+    padding: 1rem;
+   align-content: center;
+   align-self: center;
+   box-shadow: 0 2px 5px rgba(211, 66, 76, 0.5);
+}
+
+
+  .grid__productos{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "t t t t t"
+    "m1 m2 m3 m4 m5"
+    "t2 t2 t2 t2 t2"
+    "a1 a2 a3 a4 a5"
+    ". . t3 . ."
+    ". tabla tabla tabla .";
+    height: auto;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    
+
+}

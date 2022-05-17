@@ -1,0 +1,296 @@
+@media screen and (max-width:1024px){
+    /*index*/
+   
+  
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 360px 450px;
+        grid-template-areas: "titulo"
+        "texto"
+        "imagen";
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        padding-top: 3rem;
+        
+     
+    }
+    
+.main__titulo, .main__parrafo{
+    font-size: 22px;
+}
+
+    .main__img{
+        width: 60%;
+        margin-left: 12rem;
+       
+    }
+    .main2__titulo, .main2{
+        width: auto;
+        height: auto;
+        
+        
+    }
+    .main2__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 100px;
+        grid-template-areas: "img1"
+        "img2"
+        "img3"
+        "prod";
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    /*contacto*/
+
+    .pagecontacto{
+        font-size: 22px;
+        
+    }
+
+    #nombre, #mail2, #tipo, #comentarios{
+        width: 70%
+    }
+   .form__name{
+       font-size: 19px;
+      
+   }
+   .mapa__gps{
+       width: 85%;
+   }
+   
+/*productos*/
+.grid__productos{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+   grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+        "t t t"
+        "m1 m2 m3" 
+        "m4 m5 ."
+        "t2 t2 t2"
+        "a1 a2 a3"
+        "a4 a5 ."
+        "t3 t3 t3"
+        "tabla tabla tabla";
+        margin: 1rem;
+        gap: 0.5rem;
+       
+        flex-wrap: nowrap;
+        
+
+}
+.macetas__1, .macetas__2, .macetas__3, .macetas__4, .macetas__5{
+    width: 175px;
+    height: 200px;
+    align-self: center;
+    
+    
+}
+.macetas__p2, .macetas__p3, .macetas__p4, .macetas__p5{
+    align-self: center;
+    font-size: 14px;
+}
+.macetas__checkb{
+    padding-left: 1rem;
+    font-size: 14px;
+    flex-wrap: nowrap;
+}
+.almo__1, .almo__2, .almo__3, .almo__4, .almo__5{
+    width: 175px;
+    height: 200px;
+    align-self: center;
+}
+.almo__p1, .almo__p2, .almo__p3, .almo__p4, .almo__p5{
+    align-self: center;
+    font-size: 14px;
+}
+.macetash1, .almo__h2{
+    font-size: 20px;
+
+}
+
+.tablainfo__h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*faqs*/
+.faqs__h1{
+    padding-top: 2rem;
+   
+}
+.preguntas{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.faqs__p1, .faqs__p2, .faqs__p3{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+}
+
+
+@media screen and (max-width: 600px){ 
+
+   /* index*/ 
+
+.main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 450px;
+    grid-template-areas: "titulo"
+    "texto"
+    "imagen";
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    row-gap: 1rem;
+ 
+}
+
+.main__titulo{
+   font-size: 16px; 
+   line-height: 1rem;
+
+}
+.hoja-titulo{
+    font-size: 26px;
+}
+.main__parrafo{
+    font-size: 18px;
+    line-height: 45px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.main__img{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0% ;
+}
+
+.main2__titulo, .main2{
+    width: 100%;
+    height: 100%;
+    
+}
+.main2__grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 500px 100px;
+    grid-template-areas: "img1"
+    "img2"
+    "img3"
+    "prod";
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.main3{
+    font-size: 20px;
+    height: fit-content;
+    
+}
+.main3__titulo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 21px;
+}
+.main3__p{
+    font-size: 17px;
+}
+#mail{
+    padding: 1px;
+}
+
+.main2__img1, .main2__img2, .main2__img3{
+    height: 390px;
+    width: 280px;
+}
+.contacto{
+    font-size: 16px;
+}
+.boton{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+}
+
+/*contacto*/
+.gridcontacto{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto"
+    "form"
+    "mapa";
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+    row-gap: 5rem;
+}
+.pagecontacto{
+color: black;
+}
+.formuuu{
+   justify-content: flex-start;
+   padding: 2rem;
+}
+#nombre, #mail2, #tipo, #comentarios{
+    width: 70%
+}
+.mapa__gps{
+    width: 80%;
+}
+
+/*productos*/
+.grid__productos{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+   grid-template-rows: repeat(10, auto);
+    grid-template-areas:
+        "t t"
+        "m1 m2" 
+        "m3 m4"
+        "m5 m5" 
+        "t2 t2"
+        "a1 a2"
+        "a3 a4"
+        "a5 ." 
+        "t3 t3"
+        "tabla tabla ";
+        margin: 1rem;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+        
+
+}
+.macetas__1, .macetas__2, .macetas__3, .macetas__4, .macetas__5{
+    width: 175px;
+    height: 200px;
+    align-self: center;
+    
+}
+.macetas__p2, .macetas__p3, .macetas__p4, .macetas__p5{
+    align-self: center;
+}
+.macetas__checkb{
+    padding-left: 2rem;
+    
+}
+.almo__1, .almo__2, .almo__3, .almo__4, .almo__5{
+    width: 175px;
+    height: 200px;
+    align-self: center;
+}
+.almo__p1, .almo__p2, .almo__p3, .almo__p4, .almo__p5{
+    align-self: center;
+}
+}
