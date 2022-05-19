@@ -1,18 +1,13 @@
 *{
-
     padding: 0;
-
     margin: 0;
-
     box-sizing: border-box;
-
 }
 
 body{
-
     font-family: 'Roboto', sans-serif;
-
 }
+
 .header {
     box-shadow: $boxShadow ;
 
@@ -23,14 +18,13 @@ body{
         width: 100px;
         border-radius: 50px;
      }
+     
      &__transf img{
      transition: transform 2s;
-    
     }
 
      &:hover img{
-    transform: translate(200px) rotate(360deg);
-  
+     transform: translate(200px) rotate(360deg);
      }
 }
 

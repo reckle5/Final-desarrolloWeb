@@ -2,6 +2,10 @@
     width: $width;
     height: $height;
 }
+@mixin areap($area, $pos){
+    grid-area: $area;
+    position: $pos;
+}
 
 .tarjetafooter{
     width: 50px;
