@@ -7,216 +7,280 @@
   body{
     font-family: 'Roboto', sans-serif;
   }
-
-.macetash1{
-    grid-area: t;
-    display: flex;
-    font-size: 25px;
-    font-weight: normal;
-    color: black;
-    font-style:italic;
-    margin-top: 15rem;
-    padding: 0.5rem;
-    box-shadow: 0 2px 5px rgb(194, 155, 209);
-}
-    .macetas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    &__1{
-        grid-area: m1;
-        width: 250px;
-        height: 300px;
-    }
-
-    &__p2{
-        font-size: 16px;
-        font-weight:lighter;
-        color: black;
-        padding: 1rem 1rem 1rem 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    &__2{
-        grid-area: m2;
-        width: 250px;
-        height: 300px;
-    }
-
-    &__checkb{  
-        color: black;
-        padding: 1rem 1rem 1rem 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
-
-   &__3{
-    grid-area: m3;
-    width: 250px;
-    height: 300px;
-   }
-
-   &__p3{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    padding: 1rem 1rem 1rem 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
-
-   &__4{
-    grid-area: m4;
-    width: 250px;
-    height: 300px;
-   }
-
-   &__p4{
-    bottom: 45rem;
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    padding: 1rem 1rem 1rem 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
-
-   &__5{
-    grid-area: m5;
-    width: 250px;
-    height: 300px;
-   }
-
-   &__p5{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    padding: 1rem 1rem 1rem 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
-} 
-
-
-.almo{
-    display: flex;
-    flex-direction: column;
-
-   &__h2{
-    grid-area: t2;
-    display: flex;
-    font-size: 25px;
-    font-weight: normal;
-    color: black;
-    font-style:italic;
-    padding-bottom: 40px;
-    padding: 0.5rem;
-    box-shadow: 0 2px 5px rgb(194, 155, 209);
-   }
-
-   &__1{ 
-    grid-area: a1;
-    width: 250px;
-    height: 300px;   
-   }
-   &__p1{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
-    padding: 1rem 1rem 1rem 0;
-    }
-
-   &__2{  
-    grid-area: a2;
-    width: 250px;
-    height: 300px; 
-   }
-   &__p2{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem 1rem 1rem 0;
-   }
-
-   &__3{
-    grid-area: a3;
-    width: 250px;
-    height: 300px; 
-   }
-
-   &__p3{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem 1rem 1rem 0;
-   }  
-
-   &__4{
-    grid-area: a4;
-    width: 250px;
-    height: 300px;
-   }
-
-   &__p4{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem 1rem 1rem 0;
-    }
-
-   &__5{
-    grid-area: a5;
-    width: 250px;
-    height: 300px;
-   }
-
-   &__p5{
-    font-size: 16px;
-    font-weight:lighter;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem 1rem 1rem 0;
+/* PAGINA DE PRODUCTOS*/
+.prods{
+  &__banner{
+    height: fit-content;
   }
-}
-.tabla{
-        grid-area: tabla;
-        display: flex;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        table-layout: auto;
-        width: 100%;
-        height: 15rem;
-        border-color: 1px solid rgba(119, 28, 34, 0.5);
-        flex-direction: row;
-        justify-content: center; 
+
+  &__bannerPic{
+    @include tamaño(100%,150px);
+    margin-top: 2rem;
+  }
+
+    &__h1{
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(72, 165, 122, 0.904);
+        padding: 1rem;
+        color: bisque;
+        border-radius: 2rem;
     }
-
-.tablainfo__h3{
-    grid-area: t3;
-    font-size: 35px;
-    font-weight: lighter;
-    color: beige;
-    background-color: rgba(211, 66, 76, 0.5);
-    padding: 1rem;
-   align-content: center;
-   align-self: center;
-   box-shadow: 0 2px 5px rgba(211, 66, 76, 0.5);
 }
 
-  .grid__productos{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "t t t t t"
-    "m1 m2 m3 m4 m5"
-    "t2 t2 t2 t2 t2"
-    "a1 a2 a3 a4 a5"
-    ". . t3 . ."
-    ". tabla tabla tabla .";
-    height: auto;
-    justify-content: space-evenly;
-    row-gap: 2rem;
-    
+.sel{
+  font-size: 20px;
+  color: black;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prodGrilla{
+  display: grid;
+  grid-template-columns: repeat(4, 30%);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "m11 m4 m8 m5"
+  "m7 m12 m9 m2 "
+  "m3 m1 m6 m10"
+  "m13 m14 m15 m16"
+  "m17 m18 m19 m20 "
+  "m21 . . . ";
+  row-gap: 50px;
+  column-gap: 10px;
+  margin-bottom: 5rem;
+  justify-content: center;
+
+&__1{
+ grid-area: m1;
 
 }
+
+&__2{
+grid-area: m2;
+}
+
+&__3{
+grid-area: m3;
+}
+
+&__4{
+grid-area: m4;
+}
+
+&__5{
+grid-area: m5;
+}
+
+&__6{
+grid-area: m6;
+}
+
+&__7{
+grid-area: m7;
+}
+
+&__8{
+  grid-area:m8 ;
+}
+
+&__9{
+ grid-area: m9;
+}
+
+&__10{
+  grid-area: m10;
+ }
+
+ &__11{
+  grid-area: m11;
+ }
+
+ &__12{
+  grid-area: m12;
+ }
+&__13{
+  grid-area: m13;
+}
+&__14{
+  grid-area: m14;
+}
+&__15{
+  grid-area: m15;
+}
+&__16{
+  grid-area: m16;
+}
+&__17{
+  grid-area: m17;
+}
+&__18{
+  grid-area: m18;
+}
+&__19{
+  grid-area: m19;
+}
+&__20{
+  grid-area: m20;
+}
+&__21{
+  grid-area: m21;
+}
+
+
+&__m1, &__m2, &__m3, &__m4, &__m5, &__m6, &__m7, &__m8, &__m9, &__m10, &__m11, &__m12, &__m13, &__m14, &__m15, &__m16, &__m17, &__m18, &__m19, &__m20, &__m21  {
+  @include tamaño(90%,85%);
+}
+p{
+ font-family: $fontParrafos;
+ font-size: 18px;
+ color: black;
+ font-weight: 700;
+ padding-top: 10px;
+}
+}
+.price{
+  font-family: $fontParrafos;
+ font-size: 14px;
+ color: black;
+ font-weight: 700;
+}
+
+
+/* PAGINA ALMOHADONES */
+.almoGrilla{
+  display: grid;
+  grid-template-columns: repeat(3,33.3%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "a1 a2 a3"
+  "a4 a5 a6"
+  "a7 a8 a9";
+  row-gap: 50px;
+  column-gap: 10px;
+  margin-bottom: 5rem;
+  justify-content: center;
+ 
+  &__1{
+    grid-area: a1;
+   
+   }
+   
+   &__2{
+   grid-area: a2;
+   }
+   
+   &__3{
+   grid-area: a3;
+   }
+   
+   &__4{
+   grid-area: a4;
+   }
+   
+   &__5{
+   grid-area: a5;
+   }
+   
+   &__6{
+   grid-area: a6;
+   }
+   
+   &__7{
+   grid-area: a7;
+   }
+   
+   &__8{
+     grid-area:a8 ;
+   }
+   
+   &__9{
+    grid-area: a9;
+   }
+   
+   &__a1, &__a2, &__a3, &__a4, &__a5, &__a6, &__a7, &__a8, &__a9{
+     @include tamaño(100%,85%);
+   }
+   p{
+    font-family: $fontParrafos;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    padding-top: 10px;
+   }
+}
+
+/* PAGINA MACETAS*/
+.breadC{
+  margin-top: 8rem;
+}
+
+.macetaGrilla{
+  display: grid;
+  grid-template-columns: repeat(4,30%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "m1 m2 m3 m4"
+  "m5 m6 m7 m8"
+  "m9 m10 m11 m12";
+  row-gap: 40px;
+  column-gap: 10px;
+  margin-bottom: 5rem;
+  justify-content: center;
+ 
+  &__1{
+    grid-area: m1;
+   
+   }
+   
+   &__2{
+   grid-area: m2;
+   }
+   
+   &__3{
+   grid-area: m3;
+   }
+   
+   &__4{
+   grid-area: m4;
+   }
+   
+   &__5{
+   grid-area: m5;
+   }
+   
+   &__6{
+   grid-area: m6;
+   }
+   
+   &__7{
+   grid-area: m7;
+   }
+   
+   &__8{
+     grid-area:m8 ;
+   }
+   
+   &__9{
+    grid-area: m9;
+   }
+   
+   &__9{
+     grid-area: m10;
+    }
+   
+    &__9{
+     grid-area: m11;
+    }
+   
+    &__9{
+     grid-area: m12;
+    }
+   &__m1, &__m2, &__m3, &__m4, &__m5, &__m6, &__m7, &__m8, &__m9, &__m10, &__m11, &__m12 {
+     @include tamaño(90%,85%);
+   }
+   p{
+    font-family: $fontParrafos;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    padding-top: 10px;
+   }
+  }

@@ -15,13 +15,13 @@
 </head>
 
 <body>
-
+<!-- HEADER NAV -->
     <nav class="navbar navbar-sm navbar-md navbar-expand-lg navbar-light header " style=" background-color: rgba(255, 255, 255, 0.5);" >
         <a class="navbar.brand header__transf" href="">
             <img src="../imagenes/migla logo.jpg" alt="logo migla" class="header__logo ">
          </a>
         
-         <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+         <button class="navbar-toggler my-auto hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span></button>
 
         <div class="collapse navbar-collapse  justify-content-center " id="navbar">
@@ -29,9 +29,15 @@
                 <li class="nav-item">
                     <a class="nav-link " href="../index.html">Inicio</a>
                 </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="productos.html">Productos</a>
-             </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Macetas.html">Macetas</a></li>
+                      <li><a class="dropdown-item" href="almohadones.html">Almohadones</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="productos.html">Ver todos los Productos</a></li>
+                    </ul>
+                  </li>
              <li class="nav-item">
                    <a class="nav-link" href="nosotras.html">Nosotras</a>
              </li>
@@ -62,7 +68,7 @@
       <a href="http://www.facebook.com/migla.macetas/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></div>
      </section>  
     
-  
+  <!-- FORMULARIO DE CONTACTO -->
     <form action="" class="formulario">
     <div>
         <label for="nombre1" class="formulario__name">Nombre</label>
@@ -71,7 +77,7 @@
     
         <div>
         <label for="mail2" class="formulario__name">Email</label>
-        <div><input type="text" id="mail2" placeholder="Ingrese su Email..ce"></div>
+        <div><input type="text" id="mail2" placeholder="Ingrese su Email.."></div>
        </div>
     
        <div>
@@ -104,7 +110,7 @@
     </div>
     
     </form>
-    
+    <!-- GOOGLE MAPS -->
     <div class="mapa"> <p > ENCONTRANOS AQUI!</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52393.16942487666!2d-58.50125931079461!3d-34.84182478188471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd1611663293d%3A0x469feaa50c39d67c!2sLeandro%20N.%20Alem%20325!5e0!3m2!1ses!2sar!4v1648476573142!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__gps"></iframe>
   </div>  
@@ -113,7 +119,7 @@
 </main>  
 
 <footer >
-
+<!-- FOOTER -->
     <div class="container-fluid">
         <div class="row p-5 bg-dark text-white">
            <div class="col-xs-12 col-md-6 col-lg-3">

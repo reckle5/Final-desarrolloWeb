@@ -40,3 +40,8 @@ $redes:(
     padding-bottom: 5px;
     width: 60%;
 }
+
+@mixin grillaProd($area, $row){
+    grid-area: $area;
+    grid-template-rows: $row;
+}

@@ -16,12 +16,13 @@
 </head>
 
 <body>
+    <!-- HEADER NAV -->
     <nav class="navbar navbar-sm navbar-md navbar-expand-lg navbar-light header " style=" background-color: rgba(255, 255, 255, 0.5);" >
         <a class="navbar.brand header__transf" href="">
             <img src="../imagenes/migla logo.jpg" alt="logo migla" class="header__logo">
          </a>
        
-         <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+         <button class="navbar-toggler my-auto hamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span></button>
 
         <div class="collapse navbar-collapse  justify-content-center " id="navbar">
@@ -29,9 +30,15 @@
                <li class="nav-item">
                    <a class="nav-link " href="../index.html">Inicio</a>
                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-            </li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Macetas.html">Macetas</a></li>
+                  <li><a class="dropdown-item" href="almohadones.html">Almohadones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="productos.html">Ver todos los Productos</a></li>
+                </ul>
+              </li>
             <li class="nav-item">
                   <a class="nav-link" href="nosotras.html">Nosotras</a>
             </li>
@@ -48,7 +55,6 @@
                    Buscar
                </button>
             </form>
-
            </ul>
        </div>
    </nav>
@@ -65,7 +71,7 @@
     
 
     
-
+<!-- ENVIOS Y SEG. -->
     <section class="preguntas faqs ">
         <div id="envios"  class="faqs__p1 container text-center"><p>ENVIOS Y SEGUIMIENTO</p></div>   
         <dl>
@@ -90,6 +96,7 @@
         <dd class="preguntas__2">Si, una vez que recibas el mail de confirmación, que tu pedido está listo para retirar.</dd>
     </dl>
 
+    <!-- FORMAS DE PAGO -->
     <div id="pago" class="faqs__p2 container"><p >FORMAS DE PAGO</p></div>
 
     <dl>
@@ -103,6 +110,7 @@
         <dd class="preguntas__2">Paga en 3 y 6 cuotas sin interés con todas las tarjetas de crédito.</dd>
     </dl>
 
+    <!-- CAMBIOS Y DEV -->
    <div id="cambios"  class="faqs__p3 container"> <p>​CAMBIOS Y DEVOLUCIONES</p> </div>
 
    <dl>​
@@ -119,6 +127,7 @@
 
 </main>
 
+<!-- FOOTER -->
 <footer >
 
     <div class="container-fluid">
