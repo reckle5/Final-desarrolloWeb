@@ -61,7 +61,7 @@
     }
         .main2 {
         
-        &__titulo, {
+        &__titulo{
             width: auto;
             height: auto;   
         }
@@ -200,6 +200,7 @@
     
     
     /*faqs*/
+
     .faqs__h1{
         padding-top: 2rem;
     }
