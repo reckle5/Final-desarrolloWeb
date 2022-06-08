@@ -1,3 +1,24 @@
+@media screen and (max-width:1300px){
+    .carousel-item{
+        height: 30rem;
+    }
+    .main1{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 50%;
+        padding-top: 2rem;
+        grid-template-areas: "titulo titulo"
+        "texto imagen";
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+.main2__grilla{
+    margin: 2rem;
+    
+}
+
+}
+
+
 @media screen and (max-width:1024px){
     /*header*/
         .navEnlace{
@@ -24,10 +45,12 @@
     
         
         /*index*/
-    
+        .carousel-item{
+            height: 50rem;
+        }
         .main1{
             grid-template-columns: 1fr;
-            grid-template-rows: 15% 45% 40%;
+            grid-template-rows: 15% 60% 40%;
             grid-template-areas: "titulo"
             "imagen"
             "texto";
